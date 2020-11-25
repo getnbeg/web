@@ -1,0 +1,160 @@
+@font-face {
+    font-family: 'poppinsregular';
+    src: url('poppins-webfont.woff2') format('woff2'), url('poppins-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    font: 2rem "poppinsregular", serif;
+    position: relative;
+    background-color: #f8f8fb;
+}
+
+p {
+    text-align: justify;
+    font-family: 'poppinsregular';
+}
+
+/* MAIN CONTENT
+====================*/
+#main {
+    width: 70rem;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -10%);
+}
+
+.title {
+    font-size: 3.3rem;
+    text-align: center;
+}
+
+.description {
+    width: 70rem;
+    padding: 0 2rem;
+}
+
+#medium {
+    text-decoration: none;
+    color: #0089cc;
+}
+
+#medium:hover {
+    text-decoration: underline;
+}
+
+/* SIDEBAR
+====================*/
+.sidebar-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 35rem;
+    margin-left: -30rem;
+	z-index;10
+}
+
+.sidebar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: inherit;
+    width: 30rem;
+    background: #2a3042;
+    color: #ccd6de;
+}
+
+.menu {
+    font-size: 1.2rem;
+    position: absolute;
+    top: 1.5rem;
+    right: 1.3rem;
+}
+
+.sidebar-title {
+    text-align: center;
+}
+
+.dedication {
+    text-align: justify;
+    font-size: 1.5rem;
+    padding: 0 3rem;
+}
+
+/* jQ TOGGLE UTIL
+====================*/
+.show-sidebar {
+    margin-left: 0;
+}
+
+.push-body {
+    margin-left: 30rem;
+}
+
+/*table
+=================*/
+table {
+    display: inline-grid;
+    grid-template-areas: "head-fixed" "body-scrollable";
+}
+
+thead {
+    grid-area: head-fixed;
+    background-color: darksalmon;
+}
+
+tbody {
+    grid-area: body-scrollable;
+    background-color: antiquewhite;
+    overflow: auto;
+    height: 200px;
+}
+
+th, td {
+    min-width: 200px;
+    padding: 5px 10px;
+    text-align: left;
+    border: 1px solid #ccc;
+}
+
+th:first-of-type, td:first-of-type {
+    min-width: 50px;
+}
+
+/*SIDEBAR*/
+div#workForm>div {
+    display: grid;
+    margin-top: 5px;
+}
+
+div#workForm select {
+    width: 100%;
+    background-color: #f3f3f9;
+}
+
+div#workForm {
+    margin: 5px;
+    background: #656a77;
+    border-radius: 5px;
+    border: 1px solid #9ea1a9;
+    padding: 5px;
+}
+
+/**/

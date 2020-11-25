@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>CodePen - Super-easy hidden sidebar</title>
+        <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+        <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Average|Fjalla+One'>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <!-- partial:index.partial.html -->
+        <!-- hidden navigation -->
+        <div class="sidebar-wrapper">
+            <div class="sidebar">
+                <div id="workForm">
+                    <div>
+                        <label for="day">Journee</label>
+                        <input type="date" name="day">
+                    </div>
+                    <div>
+                        <label for="from">
+                            De
+                            <select name="from" id="cars">
+                                <option value="volvo">Volvo</option>
+                                <option value="saab">Saab</option>
+                                <option value="mercedes">Mercedes</option>
+                                <option value="audi">Audi</option>
+                            </select>
+                        </label>
+                    </div>
+                    <div>
+                        <label for="to">
+                            A 
+                            <select name="to" id="cars">
+                                <option value="volvo">Volvo</option>
+                                <option value="saab">Saab</option>
+                                <option value="mercedes">Mercedes</option>
+                                <option value="audi">Audi</option>
+                            </select>
+                        </label>
+                    </div>
+                    <div>
+                        <button class="btn">Appliquer</button>
+                    </div>
+                </div>
+            </div>
+            <div class="menu">
+                <i class="fa fa-bars fa-2x"></i>
+            </div>
+        </div>
+        <!-- main content -->
+        <section id="main">
+            <h1 class="title">Super-easy hidden sidebar!</h1>
+            <table class="table mb-0 table">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Username</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>Larry</td>
+                        <td>the Bird</td>
+                        <td>@twitter</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <!-- partial -->
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js'></script>
+        <script src="./script.js"></script>
+    </body>
+</html>
